@@ -6,13 +6,13 @@ const Web3 = require('Web3');
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 /** ENTER YOUR INFORMATION HERE! **/
-const mnemonic = '<YOUR SEED PHRASE HERE>'; /* YOUR SEED PHRASE ... */
+const mnemonic = '<YOUR SEED PHRASE HERE>';     /* YOUR SEED PHRASE ... */
 const providerOrUrl = '<RINKEBY ENDPOINT HERE>' /* RINKEBY ENDPOINT */
-const pathToContract = './MyContract.sol'; /* PATH TO SOLIDITY SMART CONTRACT */
+const pathToContract = './MyContract.sol';      /* PATH TO SOLIDITY SMART CONTRACT */
 
 const provider = new HDWalletProvider({ mnemonic, providerOrUrl });
 const web3 = new Web3(provider);
-const content = fs.readFileSync(pathToContract, 'utf8'); /* PATH TO CONTRACT */
+const content = fs.readFileSync(pathToContract, 'utf8');
 
 const input = {
   language: 'Solidity',
