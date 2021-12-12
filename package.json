@@ -1,0 +1,25 @@
+{
+  "name": "deploy_contract",
+  "version": "1.0.0",
+  "description": "Basic example of deploying solidity smart contract with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelJyee/deploy_contract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelJyee/deploy_contract/issues"
+  },
+  "homepage": "https://github.com/michaelJyee/deploy_contract#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "2.0.0",
+    "solc": "0.8.10",
+    "web3": "1.6.1"
+  }
+}
